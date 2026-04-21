@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万新科技 - AI员工全链条解决方案</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== 导航栏 ==================== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">万新科技</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" class="nav-link active" data-section="hero">首页</a></li>
+            <li><a href="#services" class="nav-link" data-section="services">服务介绍</a></li>
+            <li><a href="#submit" class="nav-link" data-section="submit">需求提交</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">关于我们</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">联系我们</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ==================== Hero 区 ==================== -->
+<section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+        <h1 class="hero-title">深度定制AI员工·打造全流程工作闭环</h1>
+        <p class="hero-subtitle">告别通用AI助手，针对你的行业、岗位，定制能落地、能闭环、能创造价值的专属AI团队</p>
+        <div class="hero-buttons">
+            <a href="#submit" class="btn btn-primary">立即咨询定制 →</a>
+            <a href="#services" class="btn btn-secondary">查看套餐详情</a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 核心卖点 ==================== -->
+<section class="section advantages" id="advantages">
+    <div class="container">
+        <h2 class="section-title">核心优势</h2>
+        <div class="advantage-grid">
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">🔧</div>
+                <h3>深度场景定制</h3>
+                <p>不做通用模板，聚焦每行每页具体工作场景，拆解真实工作流程，让AI员工精准匹配岗位需求</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">🔄</div>
+                <h3>全流程AI闭环</h3>
+                <p>从需求沟通、技能匹配，到定制开发、交付使用，全程一站式服务，实现工作流程自动化闭环</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">🎯</div>
+                <h3>C端/B端适配</h3>
+                <p>无论是个人创业者的单岗位需求，还是企业的多岗位团队需求，都能精准匹配，灵活定制</p>
+            </div>
+            <div class="advantage-card fade-in">
+                <div class="advantage-icon">👨‍💻</div>
+                <h3>专业团队支撑</h3>
+                <p>一群懂AI、懂工作的研究生团队，全程一对一对接，精准落地每一个定制需求</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 服务流程 ==================== -->
+<section class="section process" id="process">
+    <div class="container">
+        <h2 class="section-title">服务流程</h2>
+        <div class="process-steps">
+            <div class="process-step fade-in">
+                <div class="step-number">01</div>
+                <div class="step-icon">💬</div>
+                <h3>需求沟通</h3>
+                <p>通过在线表单/客服，告知行业、岗位、工作职能</p>
+            </div>
+            <div class="process-arrow fade-in">→</div>
+            <div class="process-step fade-in">
+                <div class="step-number">02</div>
+                <div class="step-icon">🔍</div>
+                <h3>技能匹配</h3>
+                <p>拆解工作流程，匹配专属技能，明确AI员工工作逻辑</p>
+            </div>
+            <div class="process-arrow fade-in">→</div>
+            <div class="process-step fade-in">
+                <div class="step-number">03</div>
+                <div class="step-icon">⚙️</div>
+                <h3>定制开发</h3>
+                <p>搭建AI员工，完成场景训练、流程调试</p>
+            </div>
+            <div class="process-arrow fade-in">→</div>
+            <div class="process-step fade-in">
+                <div class="step-number">04</div>
+                <div class="step-icon">🚀</div>
+                <h3>交付使用</h3>
+                <p>交付定制AI员工，提供操作指导，后续可微调优化</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 服务介绍（套餐+对比表格） ==================== -->
+<section class="section services" id="services">
+    <div class="container">
+        <h2 class="section-title">服务套餐</h2>
+
+        <!-- 套餐卡片 -->
+        <div class="pricing-grid">
+            <!-- 基础版 -->
+            <div class="pricing-card basic fade-in">
+                <div class="pricing-badge">🥉</div>
+                <h3 class="pricing-name">基础版</h3>
+                <div class="pricing-price">¥1,599</div>
+                <div class="pricing-features">
+                    <h4>核心权益</h4>
+                    <ul>
+                        <li>专属1个AI员工</li>
+                        <li>单岗位深度训练</li>
+                        <li>自定义技能配置</li>
+                        <li>1次需求沟通 + 1次微调</li>
+                        <li>基础后台权限</li>
+                    </ul>
+                    <h4>赠品</h4>
+                    <ul class="bonus">
+                        <li>免费知识库搭建</li>
+                        <li>全套操作教程</li>
+                        <li>额外1次免费微调</li>
+                    </ul>
+                </div>
+                <a href="#submit" class="btn btn-outline" data-plan="基础版">选择基础版</a>
+            </div>
+
+            <!-- 专业版 -->
+            <div class="pricing-card pro fade-in">
+                <div class="pricing-popular">最受欢迎</div>
+                <div class="pricing-badge">🥈</div>
+                <h3 class="pricing-name">专业版</h3>
+                <div class="pricing-price">¥2,599</div>
+                <div class="pricing-features">
+                    <h4>核心权益</h4>
+                    <ul>
+                        <li><strong>3~5个联动AI员工</strong></li>
+                        <li>跨岗位流程打通</li>
+                        <li>全套技能深度匹配</li>
+                        <li>3次微调 + 流程优化</li>
+                        <li>团队协同权限 无限制商用</li>
+                    </ul>
+                    <h4>赠品</h4>
+                    <ul class="bonus">
+                        <li>包含基础版全部</li>
+                        <li>多岗位流程优化</li>
+                        <li>全年免费版本更新</li>
+                        <li>专属后台管理</li>
+                        <li>额外2次免费调整</li>
+                    </ul>
+                </div>
+                <a href="#submit" class="btn btn-primary" data-plan="专业版">选择专业版</a>
+            </div>
+
+            <!-- 尊享定制版 -->
+            <div class="pricing-card premium fade-in">
+                <div class="pricing-badge">💎</div>
+                <h3 class="pricing-name">尊享定制版</h3>
+                <div class="pricing-price">¥2,999</div>
+                <div class="pricing-features">
+                    <h4>核心权益</h4>
+                    <ul>
+                        <li><strong>不限数量AI员工</strong></li>
+                        <li>全行业私有化定制</li>
+                        <li>从零自研技能体系</li>
+                        <li>一对一顾问 + 终身维护 + 无限优化</li>
+                        <li>全后台高级权限 专属部署</li>
+                    </ul>
+                    <h4>赠品</h4>
+                    <ul class="bonus">
+                        <li>包含专业版全部</li>
+                        <li>终身免费升级</li>
+                        <li>不限次数优化</li>
+                        <li>一对一全程服务</li>
+                        <li>附加1个AI职能模块</li>
+                        <li>私有知识库永久托管</li>
+                    </ul>
+                </div>
+                <a href="#submit" class="btn btn-premium" data-plan="尊享定制版">选择尊享定制版</a>
+            </div>
+        </div>
+
+        <!-- 对比表格 -->
+        <div class="comparison-table-wrapper fade-in">
+            <h3 class="table-title">套餐详细对比</h3>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>对比维度</th>
+                            <th>🥉 基础版</th>
+                            <th>🥈 专业版</th>
+                            <th>💎 尊享定制版</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">售价</td>
+                            <td><strong class="price-highlight">¥1,599</strong></td>
+                            <td><strong class="price-highlight">¥2,599</strong></td>
+                            <td><strong class="price-highlight">¥2,999</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">核心配置</td>
+                            <td>专属1个AI员工</td>
+                            <td><strong>3~5个联动AI员工</strong></td>
+                            <td><strong>不限数量AI员工</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">技能匹配</td>
+                            <td>单岗位自定义技能配置</td>
+                            <td>全套技能深度匹配</td>
+                            <td>从零自研技能体系</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">服务支持</td>
+                            <td>1次沟通 + 1次微调</td>
+                            <td>3次微调 + 流程优化</td>
+                            <td><strong>终身维护 + 无限优化</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">商用权限</td>
+                            <td>基础后台权限</td>
+                            <td>无限制商用 + 团队协同</td>
+                            <td>全后台高级权限 + 专属部署</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">适用人群</td>
+                            <td>个人/小型项目试水</td>
+                            <td>中小企业/多岗位协作</td>
+                            <td>大型企业/全行业深度定制</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">* 以上价格为标准套餐价格，特殊需求可联系客服获取定制报价。所有套餐均支持分期付款。</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 案例展示 ==================== -->
+<section class="section cases" id="cases">
+    <div class="container">
+        <h2 class="section-title">成功案例</h2>
+        <div class="case-grid">
+            <div class="case-card fade-in">
+                <div class="case-icon">📋</div>
+                <h3>行政 & 人力资源</h3>
+                <p>为中小型企业定制行政、人力一体化AI员工，覆盖考勤、入离职、公文、档案全流程。<strong>减少2名基础行政人力，效率提升75%</strong></p>
+            </div>
+            <div class="case-card fade-in">
+                <div class="case-icon">💼</div>
+                <h3>销售 & 电商营销</h3>
+                <p>像真人销售经理的微信机器人，自动报价、维护客户关系，<strong>每小时汇报进展</strong></p>
+            </div>
+            <div class="case-card fade-in">
+                <div class="case-icon">📊</div>
+                <h3>财务 & 法务风控</h3>
+                <p>财务核算、票据整理、合同初审、合规风控全覆盖。<strong>出错率趋近于0，处理速度提升80%</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 需求提交 ==================== -->
+<section class="section submit-section" id="submit">
+    <div class="container">
+        <h2 class="section-title">需求提交</h2>
+        <div class="submit-layout">
+            <!-- 表单 -->
+            <form class="submit-form fade-in" id="submitForm" onsubmit="return handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">姓名 <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                </div>
+                <div class="form-group">
+                    <label for="phone">联系电话 <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="请输入联系电话">
+                </div>
+                <div class="form-group">
+                    <label for="email">电子邮箱</label>
+                    <input type="email" id="email" name="email" placeholder="请输入邮箱地址（选填）">
+                </div>
+                <div class="form-group">
+                    <label>用户类型 <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="userType" value="C端" required> C端（个人）
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="userType" value="B端"> B端（企业）
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="industry">所属行业 <span class="required">*</span></label>
+                    <input type="text" id="industry" name="industry" required placeholder="如：电商、金融、教育、制造业等">
+                </div>
+                <div class="form-group">
+                    <label for="requirement">定制需求 <span class="required">*</span></label>
+                    <textarea id="requirement" name="requirement" rows="5" required placeholder="请详细描述您的AI员工定制需求，包括岗位、工作内容、期望效果等"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>意向套餐</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="plan" value="基础版"> 基础版（¥1,599）
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="plan" value="专业版"> 专业版（¥2,599）
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="plan" value="尊享定制版"> 尊享定制版（¥2,999）
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="plan" value="暂未确定"> 暂未确定
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">提交需求 →</button>
+            </form>
+
+            <!-- 在线客服 -->
+            <div class="contact-sidebar fade-in">
+                <div class="contact-card">
+                    <h3>在线客服</h3>
+                    <div class="contact-info">
+                        <p>💬 微信客服：<a href="weixin://dl/chat?Gengxinsjfxgzs" class="wechat-link"><strong>Gengxinsjfxgzs</strong></a></p>
+                        <p>🕐 工作时间：9:00-18:00（周一至周日）</p>
+                    </div>
+                    <p class="contact-tip">扫描下方二维码或搜索微信号添加客服</p>
+                    <div class="qr-placeholder">
+                        <span>Gengxinsjfxgzs</span><br>
+                        <small>点击上方微信号复制或搜索添加</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 关于我们 ==================== -->
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section-title">关于我们 · 一群懂AI、懂工作、敢闯敢拼的研究生团队</h2>
+        <div class="about-intro fade-in">
+            <p>我们是一支由人工智能、计算机科学、管理学等多学科背景的研究生组成的创业团队。我们深信，AI不应该只是停留在实验室里的概念，而应该真正走进每一个人的工作场景，成为你最可靠的"AI员工"。</p>
+            <p class="about-motto">"AI赋能工作，定制创造价值"</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card fade-in">
+                <div class="about-icon">🧠</div>
+                <h3>技术优势</h3>
+                <p>深耕AI大模型应用与微调技术，掌握Prompt工程、RAG知识库、Agent工作流等前沿能力</p>
+            </div>
+            <div class="about-card fade-in">
+                <div class="about-icon">🏢</div>
+                <h3>场景优势</h3>
+                <p>深入调研百余个行业真实工作场景，精准拆解工作流，让每个AI员工都能真正干活</p>
+            </div>
+            <div class="about-card fade-in">
+                <div class="about-icon">🤝</div>
+                <h3>服务优势</h3>
+                <p>全程一对一对接，从需求到交付到后续优化，专属顾问随时在线</p>
+            </div>
+            <div class="about-card fade-in">
+                <div class="about-icon">💰</div>
+                <h3>性价比优势</h3>
+                <p>相比传统软件开发动辄数十万的投入，我们用更低的成本实现更精准的AI定制</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 联系我们 ==================== -->
+<section class="section contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">联系我们</h2>
+        <div class="contact-grid fade-in">
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <div>
+                    <h4>客服电话</h4>
+                    <p><a href="tel:19283465834">19283465834</a></p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                    <h4>企业邮箱</h4>
+                    <p><a href="mailto:genghaolv@126.com">genghaolv@126.com</a></p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                    <h4>公司地址</h4>
+                    <p>北京市海淀区中关村大街</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">💬</span>
+                <div>
+                    <h4>在线客服</h4>
+                    <p>微信：<a href="weixin://dl/chat?Gengxinsjfxgzs" class="wechat-link">Gengxinsjfxgzs</a></p>
+                </div>
+            </div>
+        </div>
+        <p class="contact-notice fade-in">💡 温馨提示：面谈需提前预约，请通过电话或微信联系我们安排时间。</p>
+    </div>
+</section>
+
+<!-- ==================== 页脚 ==================== -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 万新科技 版权所有</p>
+    </div>
+</footer>
+
+<!-- 提交成功弹窗 -->
+<div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+        <div class="modal-icon">✅</div>
+        <h3>提交成功！</h3>
+        <p>感谢您的信任，我们将在24小时内与您联系。</p>
+        <button class="btn btn-primary" onclick="closeModal()">确定</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
